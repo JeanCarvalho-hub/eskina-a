@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Image from "next/image";
 
 //styles
 import "@/styles/header/header.css"
@@ -81,7 +80,7 @@ export default function Header() {
         <>
             <div className="Header-profile">
                 <div className='Background-image_profile'></div>
-                <Image src="/logo.png" alt="Foto de perfil - Eskina Açaí" width={200} height={200} className="logo-profile"></Image>
+                <img src="/logo.png" alt="Foto de perfil - Eskina Açaí" width={200} height={200} className="logo-profile"></img>
                 <div className="profile-description">
                     <div className='title-name_profile'>
                         <h1>Eskina Açaí</h1>
