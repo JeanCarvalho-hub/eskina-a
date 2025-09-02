@@ -1,0 +1,31 @@
+:root {
+  color-scheme: light;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+    font-size: 1rem;
+    background-color: rgb(87, 0, 128);
+}
+main{
+    width: 60%;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+}
+@media (max-width: 1200px) {
+    main{
+        width: 100%;
+    }
+}
+@font-face {
+    font-family: "pokinca";
+    src: url('/public/fonts/pokinca/pokinca.ttf') format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}

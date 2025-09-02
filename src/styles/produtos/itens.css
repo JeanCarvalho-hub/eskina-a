@@ -1,0 +1,73 @@
+.destaque-item{
+    margin-bottom: 2em;
+}
+.item-produto{
+    padding: 0 0.8em;
+    background-color: white;
+}
+.item-produto > h2{
+    text-align: center;
+    font-size: 1.3rem
+}
+.list-destaques{
+    margin-top: 1em;
+    list-style: none;
+    display: flex;
+    gap: 1em;
+    overflow: auto;
+    padding: 0.5em
+}
+.foto-destaque{
+    border-radius: 20px;
+}
+.foto-item{
+    border-radius: 10px;
+}
+.item-destaque{
+    padding: 0.5em;
+    border-radius: 20px;
+    box-shadow: 0px 0px 4px rgba(128, 128, 128, 0.418);
+    width: max-content;
+
+}
+.list-combo{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-top: 1.5em;
+}
+.item-combo{
+    box-shadow: 0px 0px 4px rgba(128, 128, 128, 0.712);
+    border-radius: 10px;
+}
+.combo-item-descripiton{
+    padding: 0.8em;
+    display: flex;
+    flex-direction: column;
+}
+.combo-item-descripiton > p{
+    font-size: 0.8em;
+    color: rgb(68, 68, 68);
+}
+.div-item-combo-direita{
+    display: flex;
+    gap: 0.8em;
+}
+.div-item-combo-esquerda{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 0.8em;
+}
+.btn-combo{
+    border-radius: 10px;
+    outline: none;
+    padding: 1em;
+    border: none;
+    background-color: rgb(129, 3, 179);
+    color: white;
+    margin-top: auto;
+}
+.produtos-copos{
+    height: 100vh;
+}

@@ -1,0 +1,62 @@
+.menu-app {
+    width: 100%;
+    padding: 1em 0.5em;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    bottom: 0;
+    z-index: 999;
+    box-shadow: 0 -2px 2px rgba(209, 209, 209, 0.377);
+}
+
+.menu-app>ul {
+    display: flex;
+    list-style: none;
+    gap: 3em;
+    justify-content: space-evenly;
+}
+.menu-app ul li{
+    position: relative;
+}
+.link-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(119, 119, 119);
+    font-size: 0.6em;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    transition: all 0.5s ease-in-out;
+}
+
+.link-btn.active {
+    color: purple;
+}
+
+.link-btn.active img {
+    filter: brightness(0) saturate(100%) invert(10%) sepia(95%) saturate(6000%) hue-rotate(285deg) brightness(90%) contrast(100%);
+}
+.notifica-item{
+    background-color: rgba(255, 0, 0, 0.767);
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    right: -4;
+    animation: pulsar 2s infinite ease-in-out;
+}
+
+@keyframes pulsar {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}

@@ -1,0 +1,50 @@
+{
+    "Destaques": [
+        {
+            "id": 1,
+            "nome": "Copo",
+            "preco": 15.00,
+            "tamanho": [
+                "Pequeno",
+                "Médio",
+                "Grande",
+                "XG"
+            ],
+            "img": "/produtos/teste.jpeg"
+        },
+        {
+            "id": 2,
+            "nome": "Tigela",
+            "preco": 20.00,
+            "img": "/produtos/teste.jpeg"
+        },
+        {
+            "id": 3,
+            "nome": "Tigela",
+            "preco": 20.00,
+            "img": "/produtos/teste.jpeg"
+        }
+    ],
+    "Combos": [
+        {
+            "id": 4,
+            "nome": "Combo Refrescancia",
+            "descricao": "Um açaí leve, cremoso e geladinho, feito pra matar a sede e refrescar nos dias quentes. A escolha perfeita pra quem busca sabor na medida certa.",
+            "preco": 15.00,
+            "tamanho": [
+                "Pequeno",
+                "Médio",
+                "Grande",
+                "XG"
+            ],
+            "img": "/produtos/teste.jpeg"
+        },
+        {
+            "id": 5,
+            "nome": "Tigela",
+            "descricao": "Um açaí leve, cremoso e geladinho, feito pra matar a sede e refrescar nos dias quentes. A escolha perfeita pra quem busca sabor na medida certa.",
+            "preco": 20.00,
+            "img": "/produtos/teste.jpeg"
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+.nav-list-menu{
+    width: 100%;
+    overflow: auto;
+    margin: 0.5em 0;
+}
+.list-menu{
+    list-style: none;
+    display: flex;
+    gap: 2em;
+    margin: 1em auto;
+    justify-content: center;
+    padding: 1.3em;
+    border-radius: 20px;
+    font-size: 0.6em;
+    color: rgb(240, 240, 240);
+    flex-wrap: nowrap;
+    min-width: max-content;
+}
+.list-menu li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8em;
+    background-color: rgb(129, 3, 179);
+    padding: 0.8em;
+    border-radius: 20px;
+    width: 100px;
+}
+.list-menu span{
+    text-align: center;
+}
+.img-menu{
+    border-radius: 50%;
+}

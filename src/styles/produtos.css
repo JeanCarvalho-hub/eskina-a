@@ -1,0 +1,76 @@
+.btn-back{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1001;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+.produto-page{
+    height: 100vh;
+}
+.div-imagem-produto{
+    width: 100%;
+    height: 300px;
+    aspect-ratio: 16/9;
+
+}
+.foto-produto-selecionar{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0 0 10px 10px;
+}
+.block-carrinho-finalizar{
+    border-top: 1px solid rgba(128, 128, 128, 0.158);
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+
+}
+.text-btn-finalizar{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(129, 3, 179);
+    padding: 0.9em;
+    border-radius: 5px;
+    border: none;
+}
+.list-tamanhos{
+    list-style: none;
+    display: flex;
+    gap: 1em;
+}
+.list-tamanhos li {
+    width: 4.5em;
+    height: 3em;
+    font-size: 0.8em;
+    background-color: rgb(255, 255, 255);
+    padding: 0.5em;
+    color: rgb(36, 36, 36);
+    border-radius: 5px;
+    border: 1px solid rgb(129, 3, 179);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.list-tamanhos li.selecionado {
+    background-color: rgb(129, 3, 179);
+    color: #fff;
+}
+.div-finalizar-sacola{
+    width: 100%;
+    position: absolute;
+    bottom: 50px;
+    background-color: rgb(255, 255, 255);
+    padding: 0.8em 0.9em 2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
