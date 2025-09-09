@@ -1,0 +1,22 @@
+.section-promocoes{
+    height: 100vh;
+    padding:2em;
+    text-align: center;
+}
+.list-promos{
+    margin-top: 1em;
+}
+.list-promos li {
+    list-style: none;
+    box-shadow: 0px 0px 4px rgb(175, 175, 175);
+    margin: auto;
+    border-radius: 10px;
+}
+.capa-promo{
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+}
+.title-promo{
+    padding: 0.5em;
+}

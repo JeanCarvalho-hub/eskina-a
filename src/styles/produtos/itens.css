@@ -1,13 +1,13 @@
 .destaque-item{
-    margin-bottom: 2em;
+    margin-bottom: 1.5em;
 }
 .item-produto{
     padding: 0 0.8em;
-    background-color: white;
 }
 .item-produto > h2{
     text-align: center;
-    font-size: 1.3rem
+    font-size: 1.3rem;
+    font-family: "taso", sans-serif;
 }
 .list-destaques{
     margin-top: 1em;
@@ -26,10 +26,11 @@
 .item-destaque{
     padding: 0.5em;
     border-radius: 20px;
-    box-shadow: 0px 0px 4px rgba(128, 128, 128, 0.418);
+    box-shadow: 0px 0px 2px 1px gainsboro;
     width: max-content;
-
+    text-align: center;
 }
+
 .list-combo{
     list-style: none;
     display: flex;
@@ -38,8 +39,9 @@
     margin-top: 1.5em;
 }
 .item-combo{
-    box-shadow: 0px 0px 4px rgba(128, 128, 128, 0.712);
+    box-shadow: 0px 0px 1px 1px rgb(221, 221, 221);
     border-radius: 10px;
+    font-family: "open", sans-serif;
 }
 .combo-item-descripiton{
     padding: 0.8em;
@@ -70,4 +72,41 @@
 }
 .produtos-copos{
     height: 100vh;
+}
+.section-bebidas {
+    padding-bottom: 8em;
+}
+.img-bebida{
+    border-radius: 10px;
+}
+.list-bebidas{
+    padding: 1em;
+    font-family: "open", sans-serif;
+    font-size: 0.9em;
+}
+.itens-bebidas{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5em 0;
+    border-radius: 10px;
+    border-bottom: 1px solid gainsboro;
+}
+.descricao-bebidas{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+.descricao-bebidas span{
+    margin-bottom: 1em;
+}
+.btn-bebidas{
+    margin-top: auto;
+    margin-left: auto;
+    background-color:rgb(129, 3, 179);
+    border: none;
+    outline: none;
+    color: white;
+    padding: 1em;
+    border-radius: 5px;
 }

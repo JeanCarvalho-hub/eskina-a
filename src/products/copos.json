@@ -5,7 +5,7 @@
     "slug": "sk-casadinho",
     "ingredientes": ["Creme de ninho", "Creme de avelã", "Canudo Wafer"],
     "descricao": "Uma combinação irresistível de creme de ninho com creme de avelã, finalizado com crocante canudo wafer.",
-    "precos": { "P": 18.99, "M": 21.99, "G": 23.99, "COPAO": 29.99 },
+    "precos": { "300ml": 18.99, "400ml": 21.99, "500ml": 23.99, "700ml": 29.99 },
     "img": "/produtos/teste.jpeg"
   },
   {
@@ -14,7 +14,7 @@
     "slug": "sk-sensacao",
     "ingredientes": ["Morango", "Leite em pó", "Ovo Maltine", "Canudo Wafer"],
     "descricao": "Delicioso mix de morango com leite em pó e crocante Ovo Maltine, acompanhado de canudo wafer.",
-    "precos": { "P": 18.99, "M": 21.99, "G": 23.99, "COPAO": 29.99 },
+    "precos": { "300ml": 18.99, "400ml": 21.99, "500ml": 23.99, "700ml": 29.99 },
     "img": "/produtos/teste.jpeg"
   },
   {
@@ -23,7 +23,7 @@
     "slug": "sk-mistico",
     "ingredientes": ["Leite condensado", "Leite em pó", "Creme de avelã", "Kit Kat ou Bis"],
     "descricao": "Uma explosão de sabores com leite condensado, leite em pó, creme de avelã e pedacinhos de Kit Kat ou Bis.",
-    "precos": { "P": 18.99, "M": 21.99, "G": 23.99, "COPAO": 29.99 },
+    "precos": { "300ml": 18.99, "400ml": 21.99, "500ml": 23.99, "700ml": 29.99 },
     "img": "/produtos/teste.jpeg"
   },
   {
@@ -32,7 +32,7 @@
     "slug": "sk-cremoso",
     "ingredientes": ["Morango ou Banana", "Leite em Pó", "Leite Condensado", "Canudo Wafer"],
     "descricao": "Frutas frescas (morango ou banana) combinadas com leite em pó e leite condensado, finalizadas com canudo wafer.",
-    "precos": { "P": 18.99, "M": 21.99, "G": 23.99, "COPAO": 29.99 },
+    "precos": { "300ml": 18.99, "400ml": 21.99, "500ml": 23.99, "700ml": 29.99 },
     "img": "/produtos/teste.jpeg"
   },
   {
@@ -41,7 +41,7 @@
     "slug": "sk-bombomzinho",
     "ingredientes": ["Creme de avelã", "Sonho de valsa ou Ouro Branco", "Leite Condensado", "Leite em Pó"],
     "descricao": "Saboroso creme de avelã com bombons Sonho de Valsa ou Ouro Branco, leite condensado e leite em pó.",
-    "precos": { "P": 18.99, "M": 21.99, "G": 23.99, "COPAO": 29.99 },
+    "precos": { "300ml": 18.99, "400ml": 21.99, "500ml": 23.99, "700ml": 29.99 },
     "img": "/produtos/teste.jpeg"
   },
   {
@@ -50,7 +50,7 @@
     "slug": "sk-crocante",
     "ingredientes": ["Bolacha Oreo", "Leite Condensado", "Ovo Maltine", "Canudo Wafer"],
     "descricao": "Mistura deliciosa de bolacha Oreo, leite condensado e crocante Ovo Maltine, finalizada com canudo wafer.",
-    "precos": { "P": 18.99, "M": 21.99, "G": 23.99, "COPAO": 29.99 },
+    "precos": { "300ml": 18.99, "400ml": 21.99, "500ml": 23.99, "700ml": 29.99 },
     "img": "/produtos/teste.jpeg"
   },
   {
@@ -59,7 +59,7 @@
     "slug": "sk-tradicional",
     "ingredientes": ["Leite condensado", "Leite em pó", "Banana", "Granola"],
     "descricao": "Receita clássica com leite condensado, leite em pó, banana e o crocante da granola.",
-    "precos": { "P": 15.99, "M": 18.99, "G": 20.99, "COPAO": 26.99 },
+    "precos": { "300ml": 15.99, "400ml": 18.99, "500ml": 20.99, "700ml": 26.99 },
     "img": "/produtos/teste.jpeg"
   },
   {
@@ -68,7 +68,7 @@
     "slug": "sk-kids",
     "ingredientes": ["Leite condensado", "Morango", "Banana", "Confete"],
     "descricao": "Versão divertida com leite condensado, frutas (morango e banana) e confeitos coloridos.",
-    "precos": { "P": 15.99, "M": 18.99, "G": 20.99, "COPAO": 26.99 },
+    "precos": { "300ml": 15.99, "400ml": 18.99, "500ml": 20.99, "700ml": 26.99 },
     "img": "/produtos/teste.jpeg"
   },
   {
@@ -77,7 +77,7 @@
     "slug": "sk-duplo-leite",
     "ingredientes": ["Leite em Pó", "Leite Condensado"],
     "descricao": "Simples e irresistível: leite em pó com leite condensado, para os apaixonados por doce de leite.",
-    "precos": { "P": 13.99, "M": 16.99, "G": 19.99, "COPAO": 24.99 },
+    "precos": { "300ml": 13.99, "400ml": 16.99, "500ml": 19.99, "700ml": 24.99 },
     "img": "/produtos/teste.jpeg"
   },
   {
@@ -86,7 +86,7 @@
     "slug": "sk-pacoquita",
     "ingredientes": ["Leite Condensado", "Paçoca"],
     "descricao": "Clássica mistura de leite condensado com a crocância e o sabor único da paçoca.",
-    "precos": { "P": 13.99, "M": 16.99, "G": 19.99, "COPAO": 24.99 },
+    "precos": { "300ml": 13.99, "400ml": 16.99, "500ml": 19.99, "700ml": 24.99 },
     "img": "/produtos/teste.jpeg"
   }
 ]

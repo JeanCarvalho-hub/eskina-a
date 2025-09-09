@@ -6,6 +6,7 @@ import Destaques from '@/components/destaque';
 import ProdutosDestaques from '@/components/produtosDestaques';
 import AllItens from '@/components/itens';
 import Tigela from '@/components/tigela';
+import Bebidas from '@/components/bebida';
 
 export default function Inicio() {
   return (
@@ -21,7 +22,7 @@ export default function Inicio() {
         <ProdutosDestaques />
         <AllItens />
         <Tigela />
-        copos
+        <Bebidas/>
       </section>
     </>
   );

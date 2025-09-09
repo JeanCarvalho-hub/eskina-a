@@ -1,0 +1,30 @@
+{
+  "acompanhamentos": {
+    "chocolate_e_bombons": [
+      { "id": "c3", "nome": "Confete", "preco": 3.00 },
+      { "id": "c7", "nome": "Ouro Branco", "preco": 3.00 },
+      { "id": "c8", "nome": "Sonho de Valsa", "preco": 3.00 },
+      { "id": "c9", "nome": "Oreo", "preco": 3.00 },
+      { "id": "c10", "nome": "Bis", "preco": 3.00 },
+      { "id": "c11", "nome": "KitKat", "preco": 3.00 },
+      { "id": "c17", "nome": "Confete (extra)", "preco": 3.00 },
+      { "id": "c18", "nome": "Gotas de Chocolate", "preco": 3.00 }
+    ],
+    "frutas": [
+      { "id": "c12", "nome": "Morango", "preco": 3.00 },
+      { "id": "c13", "nome": "Banana", "preco": 3.00 },
+      { "id": "c14", "nome": "Kiwi", "preco": 3.00 },
+      { "id": "c15", "nome": "Uva Verde", "preco": 3.00 }
+    ],
+    "cremes_e_lacteos": [
+      { "id": "c4", "nome": "Leite em Pó", "preco": 3.00 },
+      { "id": "c5", "nome": "Leite Condensado", "preco": 3.00 },
+      { "id": "c6", "nome": "Ovo Maltine", "preco": 3.00 }
+    ],
+    "crocancia_e_cereais": [
+      { "id": "c1", "nome": "Granola", "preco": 3.00 },
+      { "id": "c2", "nome": "Paçoca", "preco": 3.00 },
+      { "id": "c16", "nome": "Canudo Wafer (2)", "preco": 3.00 }
+    ]
+  }
+}

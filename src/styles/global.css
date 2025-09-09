@@ -25,7 +25,18 @@ main{
 }
 @font-face {
     font-family: "pokinca";
-    src: url('/public/fonts/pokinca/pokinca.ttf') format("truetype");
+    src: url('/fonts/pokinca/pokinca.ttf') format("truetype");
     font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "open";
+    src: url("/fonts/Open_Sans/OpenSans.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "taso";
+    src: url("/fonts/TASA_Orbiter/tasa.ttf") format("truetype");
     font-style: normal;
 }

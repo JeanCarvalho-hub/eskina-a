@@ -1,34 +1,54 @@
-.produtos-copos, .div-produtos-copos{
+.produtos-copos,
+.div-produtos-copos {
     margin-top: 1.5em;
 }
-.produtos-copos{
+
+.produtos-copos {
     height: 100%;
 }
-.list-copos{
+
+.list-copos {
     list-style: none;
     display: flex;
     flex-direction: column;
     gap: 1em;
+    border-top: 1px solid gainsboro;
+    border-bottom: 1px solid gainsboro;
+    border-radius: 10px;
+
 }
-.item-copos{
+
+.item-copos {
     padding: 1em 0.5em;
     border-radius: 10px;
-    display: flex;
-    gap: 0.8em;
-    border-bottom: 1px solid gainsboro;
+    font-family: "open", sans-serif;
 }
-.div-description-item{
+
+.item-copos-link {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    text-decoration: none;
+    color: inherit;
+}
+
+.div-description-item {
     display: flex;
     flex-direction: column;
     font-size: 0.9em;
 }
-.item-description{
-    font-size: 0.9em;
+.div-description-item > h3{
+    margin-bottom: 0.3em;
+}
+.item-description {
+    font-size: 0.8em;
     color: rgb(68, 68, 68);
 }
-.item-preco{
-    margin-top: auto;
+
+.item-preco {
+    margin-top: 0.5em;
 }
-.foto-copo{
+
+.foto-copo {
     border-radius: 10px;
 }

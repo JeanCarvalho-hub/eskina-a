@@ -1,0 +1,85 @@
+.section-sacola {
+    height: 100vh;
+    padding: 1.5em;
+    font-size: 0.9em;
+    font-family: "open", sans-serif;
+}
+
+.section-sacola>h2 {
+    text-align: center;
+}
+
+.sacola-item {
+    margin-bottom: 2em;
+}
+
+.div-list-sacola {
+    height: 100%;
+}
+
+.empaty-sacola {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    margin-top: auto;
+    gap: 0.6em;
+}
+
+.empaty-sacola span {
+    color: gray;
+    font-size: 0.8em;
+}
+
+.total-text{
+    font-size: 0.9em;
+    font-family: "open", sans-serif;
+}
+.div-descricao-item-sacola {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.9em;
+}
+
+.img-sacola {
+    border-radius: 10px;
+    object-fit: cover;
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+}
+
+.span-descricao {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.lista-complementos {
+    list-style: none;
+    font-size: 0.9em;
+    padding: 0.3em 0.4em;
+    margin-top: 0.3em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+}
+.preco {
+    color: rgb(0, 99, 0);
+}
+
+.bnt-complemento {
+    margin-left: auto;
+}
+
+.block-quantidade {
+    display: inline-block;
+    padding: 0.2em 0.4em;
+    font-size: 0.9em;
+    color: rgb(66, 66, 66);
+    margin-right: 0.5em;
+    border-radius: 5px;
+    background-color: rgb(238, 238, 238);
+    text-align: center;
+}

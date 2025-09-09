@@ -5,7 +5,7 @@
     position: fixed;
     bottom: 0;
     z-index: 999;
-    box-shadow: 0 -2px 2px rgba(209, 209, 209, 0.377);
+    box-shadow: 0 -2px 1px rgba(209, 209, 209, 0.144);
 }
 
 .menu-app>ul {
@@ -46,6 +46,25 @@
     top: 0;
     right: -4;
     animation: pulsar 2s infinite ease-in-out;
+}
+.div-finalizar-sacola {
+    color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5em 0.8em;
+    margin-bottom: 1.3em;
+    border-radius: 5px;
+    border-bottom: 1px solid rgba(220, 220, 220, 0.541);
+    background-color: rgb(129, 3, 179);
+}
+
+.btn-finalizar{
+    color: rgb(20, 20, 20);
+    background-color: rgb(255, 255, 255);
+    padding: 0.5em;
+    border-radius: 5px;
 }
 
 @keyframes pulsar {

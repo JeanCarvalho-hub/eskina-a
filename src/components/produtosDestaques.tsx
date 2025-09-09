@@ -1,6 +1,7 @@
 import React from "react";
 import "@/styles/produtos/itens.css";
 import data from "@/products/itens.json";
+import Image from "next/image";
 
 export default function ProdutosDestaques() {
     return (

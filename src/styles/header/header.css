@@ -5,19 +5,20 @@
 .Background-image_profile {
     width: 100%;
     height: 400px;
-    background-image: url("/capa.jpeg");
+    background-image: url("/banner_capa.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
     z-index: 1;
 }
+
 @media (max-width: 768px) {
     .Background-image_profile {
         height: 300px;
-        background-position:center;
+        background-position: center;
         border-radius: 0;
-    }   
+    }
 }
 
 @media (max-width: 480px) {
@@ -34,12 +35,14 @@
     position: relative;
     z-index: 2;
     margin-top: -100px;
+    box-shadow: 0px -2px 4px 2px rgba(46, 0, 65, 0.199);
 }
+
 @media (max-width: 768px) {
     .profile-description {
-    padding: 5em 1em 2em;
-    margin-top: -20px;
-}
+        padding: 5em 1em 2em;
+        margin-top: -20px;
+    }
 }
 
 .logo-profile {
@@ -53,23 +56,24 @@
 }
 
 @media (max-width: 768px) {
-    .logo-profile{
+    .logo-profile {
         width: 9em;
         height: 9em;
-        background-position:center;
+        background-position: center;
         top: 210px;
     }
 }
+
 @media (max-width: 480px) {
     .logo-profile {
         width: 8em;
         height: 8em;
-        background-position:center;
+        background-position: center;
         top: 180px;
     }
 }
 
-.local-profile{
+.local-profile {
     font-size: 0.9em;
     color: rgb(107, 107, 107);
     display: flex;
@@ -79,9 +83,11 @@
     margin-bottom: 1em;
     font-style: normal;
 }
-.title-name_profile > h1{
+
+.title-name_profile>h1 {
     margin: 0 0 3px;
 }
+
 .icones_profile ul {
     list-style: none;
 }
@@ -106,13 +112,27 @@
     font-size: 0.9em;
 }
 
-.style-open{
+@keyframes pulser {
+    0% {
+        box-shadow: 0px 0px 4px rgb(170, 153, 1);
+    }
+
+    50% {
+        box-shadow: 0px 0px 4px 2px rgb(236, 221, 19);
+    }
+    100%{
+        box-shadow: 0px 0px 4px rgb(204, 184, 1);
+    }
+}
+
+.style-open {
     display: block;
     color: green;
     margin-bottom: 1em;
 
 }
-.style-closed{
+
+.style-closed {
     display: block;
     color: rgb(207, 0, 0);
     margin-bottom: 1em;

@@ -15,16 +15,33 @@ export default function Abas() {
     { href: "/promocoes", label: "Promoções", icon: "/icons/promo-desa.png" },
     { href: "/sacola", label: "Sacola", icon: "/icons/car-desa.png" },
   ];
-  const {itens} = useContext(SacolaContext);
+  const { itens } = useContext(SacolaContext);
 
   return (
     <div className="menu-app">
+      {itens.length > 0 ? (
+        <div className="div-finalizar-sacola">
+          <span className="total-text">Total: R$ {" "}
+          {itens
+            .reduce((acc, item) => {
+              const precoProduto = item.preco * item.quantidade;
+              const precoComplementos = item.complemento.reduce(
+                (sum, c) => sum + c.preco * c.quantidade,
+                0
+              );
+              return acc + precoProduto + precoComplementos;
+            }, 0)
+            .toFixed(2)}</span>          
+            <span className="btn-finalizar">Finalizar</span>
+        </div>
+      ) : ""}
       <ul>
         {links.map((link) => (
           <li key={link.href}>
             <Link
               href={link.href}
               className={`link-btn ${pathname === link.href ? "active" : ""}`}
+              prefetch={true}
             >
               <img
                 src={link.icon}
@@ -34,9 +51,9 @@ export default function Abas() {
               />
               <span>{link.label}</span>
             </Link>
-              {link.label === "Sacola" && itens.length > 0 ? (
-                <div className="notifica-item"></div>
-              ): ""}          
+            {link.label === "Sacola" && itens.length > 0 ? (
+              <div className="notifica-item"></div>
+            ) : ""}
           </li>
         ))}
       </ul>

@@ -5,7 +5,7 @@ export default function Tigela() {
         <section id="Tigela" className="style-tigela">
             <h2 style={{textAlign: "center"}}>tigelas</h2>
             <div className="div-tigela-card">
-                <img src="/banner-tigela.png" alt="foto anunciando para montar sua tigela de açai" className="foto-tigela"/>
+                <img src="/98.png" alt="foto anunciando para montar sua tigela de açai" className="foto-tigela"/>
             </div>
         </section>
     );

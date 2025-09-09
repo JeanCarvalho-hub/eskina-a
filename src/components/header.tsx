@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 
 //styles
 import "@/styles/header/header.css"
@@ -9,6 +9,8 @@ export default function Header() {
     const [diaAtual, setDiaAtual] = useState<number>();
     const [hora, setHora] = useState<number>();
     const [open, setOpen] = useState(false);
+    const [estrela, setEstrela] = useState<string[]>([]);
+    const dirRef = useRef<"add" | "remove">("add");
 
     type Horario = { hr_in: number; hr_cl: number };
 
@@ -75,7 +77,6 @@ export default function Header() {
 
         return "Fechado • Nenhum horário restante hoje";
     }
-
     return (
         <>
             <div className="Header-profile">
@@ -97,7 +98,10 @@ export default function Header() {
 
                                     </div>
                                 </ul>
-                                <a className="link-google"><img src="/icons/google.png" alt="Icone do Google" width={25} height={25} /><span>Nos avalie e ganhe um brinde</span></a>
+                                <a className="link-google">
+                                    <img src="/icons/google.png" alt="Icone do Google" width={25} height={25} />
+                                    <span>Nos avalie e ganhe um brinde</span>
+                                </a>
                             </nav>
                         </div>
                     </div>
