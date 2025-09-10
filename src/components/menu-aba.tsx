@@ -15,24 +15,28 @@ export default function Abas() {
     { href: "/promocoes", label: "Promoções", icon: "/icons/promo-desa.png" },
     { href: "/sacola", label: "Sacola", icon: "/icons/car-desa.png" },
   ];
-  const { itens } = useContext(SacolaContext);
+  const { itens, bebidas } = useContext(SacolaContext);
+  const total = itens.length + bebidas.length;
 
   return (
     <div className="menu-app">
-      {itens.length > 0 ? (
+      {total > 0 ? (
         <div className="div-finalizar-sacola">
-          <span className="total-text">Total: R$ {" "}
-          {itens
-            .reduce((acc, item) => {
-              const precoProduto = item.preco * item.quantidade;
-              const precoComplementos = item.complemento.reduce(
-                (sum, c) => sum + c.preco * c.quantidade,
-                0
-              );
-              return acc + precoProduto + precoComplementos;
-            }, 0)
-            .toFixed(2)}</span>          
-            <span className="btn-finalizar">Finalizar</span>
+          <span className="total-text">
+            Total: R${" "}
+            {(
+              itens.reduce((acc, item) => {
+                const precoProduto = item.preco * item.quantidade;
+                const precoComplementos = item.complemento.reduce(
+                  (sum, c) => sum + c.preco * c.quantidade,
+                  0
+                );
+                return acc + precoProduto + precoComplementos;
+              }, 0) +
+              bebidas.reduce((acc, b) => acc + b.preco * b.quantidade, 0)
+            ).toFixed(2)}
+          </span>
+          <span className="btn-finalizar">Finalizar</span>
         </div>
       ) : ""}
       <ul>
@@ -51,7 +55,7 @@ export default function Abas() {
               />
               <span>{link.label}</span>
             </Link>
-            {link.label === "Sacola" && itens.length > 0 ? (
+            {link.label === "Sacola" && total > 0 ? (
               <div className="notifica-item"></div>
             ) : ""}
           </li>
