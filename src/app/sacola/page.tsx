@@ -22,7 +22,6 @@ export default function Sacola() {
           </div>
         ) : (
           <>
-            {/* Produtos */}
             {itens.map((i) => {
               const imgSrc =
                 data.find((d) => d.nome === i.nome)?.img || "/img/default.png";

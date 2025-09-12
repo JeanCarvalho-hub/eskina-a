@@ -20,8 +20,14 @@
     gap: 1em;
     overflow: auto;
     padding: 0.5em;
+    font-size: 0.8em;
 }
-
+.description-item-destaque{
+    padding: 0.8em;
+}
+.description-item-destaque h3{
+    font-weight: normal;
+}
 .foto-destaque {
     border-radius: 20px;
 }
@@ -33,56 +39,10 @@
 .item-destaque {
     padding: 0.5em;
     border-radius: 20px;
-    box-shadow: 0px 0px 2px 1px gainsboro;
     width: max-content;
     text-align: center;
     background-color: white;
-}
-
-.list-combo {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    margin-top: 1.5em;
-}
-
-.item-combo {
-    box-shadow: 0px 0px 1px 1px rgb(221, 221, 221);
-    border-radius: 10px;
-    font-family: "open", sans-serif;
-}
-
-.combo-item-descripiton {
-    padding: 0.8em;
-    display: flex;
-    flex-direction: column;
-}
-
-.combo-item-descripiton>p {
-    font-size: 0.8em;
-    color: rgb(68, 68, 68);
-}
-
-.div-item-combo-direita {
-    display: flex;
-    gap: 0.8em;
-}
-
-.div-item-combo-esquerda {
-    display: flex;
-    flex-direction: row-reverse;
-    gap: 0.8em;
-}
-
-.btn-combo {
-    border-radius: 5px;
-    outline: none;
-    padding: 1em;
-    border: none;
-    background-color: rgb(129, 3, 179);
-    color: white;
-    margin-top: auto;
+    box-shadow: 0px 0px 2px 1px rgb(218, 218, 218);
 }
 
 .section-bebidas {
@@ -94,7 +54,6 @@
 }
 
 .list-bebidas {
-    padding: 1em;
     font-family: "open", sans-serif;
     font-size: 0.9em;
 }
@@ -103,16 +62,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5em 0;
+    padding: 1.5em 1em;
+    margin-bottom: 1.5em;
     border-radius: 10px;
-    border-bottom:1px solid gainsboro ;
+    box-shadow: 0px 2px 0px 1px rgba(220, 220, 220, 0.514);
 }
 
 .descricao-bebidas {
     display: flex;
     flex-direction: column;
     text-align: left;
-    font-size: 0.9em;
 }
 
 .descricao-bebidas span {
@@ -120,13 +79,16 @@
 }
 
 .btn-bebidas {
+    width: 10em;
     margin-top: auto;
     margin-right: auto;
-    background-color: rgb(129, 3, 179);
+    background-color: rgb(157, 2, 204);
     border: none;
     outline: none;
-    color: white;
-    padding: 0.8em;
+    color: rgb(255, 255, 255);
+    padding: 0.3em;
     border-radius: 5px;
     font-size: 0.9em;
+    font-family: "open", sans-serif;
+    font-weight: bold;
 }

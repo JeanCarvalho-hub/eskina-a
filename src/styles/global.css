@@ -39,3 +39,7 @@ main{
     src: url("/fonts/TASA_Orbiter/tasa.ttf") format("truetype");
     font-style: normal;
 }
+@font-face {
+    font-family: "host";
+    src: url("/fonts/Host_Grotesk/HostGrotesk-VariableFont_wght.ttf") format("truetype");
+}

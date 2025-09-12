@@ -18,6 +18,10 @@ type ProdutoNaSacola = {
   complemento: Complemento[];
 };
 
+type complementoTigela = {
+  nome: string;
+}
+
 type BebidaNaSacola = {
   id: string;
   nome: string;
@@ -25,11 +29,28 @@ type BebidaNaSacola = {
   preco: number;
 };
 
+type tigelaNaSacola = {
+  id: string;
+  tamanho: "500ml" | "1L",
+  preco: number,
+  complemento: complementoTigela[]
+  quantidade: number;
+}
+
+type LimiteTigela = {
+  id: string;
+  tamanho: "500ml" | "1L";
+  quantidade_de_complemento: number;
+};
+
+
 type SacolaContextType = {
   itens: ProdutoNaSacola[];
   bebidas: BebidaNaSacola[];
+  tigelas: tigelaNaSacola[];
   adicionarItem: (item: ProdutoNaSacola) => void;
   removerItem: (id: number, tamanho: string, complemento: Complemento[]) => void;
+    adicionarTigelas: (tigela: tigelaNaSacola, limites: LimiteTigela[]) => void;
   adicionarComplemento: (
     id: number,
     tamanho: string,
@@ -43,17 +64,20 @@ type SacolaContextType = {
 export const SacolaContext = createContext<SacolaContextType>({
   itens: [],
   bebidas: [],
-  adicionarItem: () => {},
-  removerItem: () => {},
-  adicionarComplemento: () => {},
-  adicionarBebida: () => {},
-  removerBebida: () => {},
+  tigelas: [],
+  adicionarItem: () => { },
+  removerItem: () => { },
+  adicionarComplemento: () => { },
+  adicionarBebida: () => { },
+  adicionarTigelas: () => {},
+  removerBebida: () => { },
   calcularTotal: () => 0,
 });
 
 export const SacolaProvider = ({ children }: { children: ReactNode }) => {
   const [itens, setItens] = useState<ProdutoNaSacola[]>([]);
   const [bebidas, setBebidas] = useState<BebidaNaSacola[]>([]);
+  const [tigelas, setTigelas] = useState<tigelaNaSacola[]>([])
 
   // carrega
   useEffect(() => {
@@ -62,13 +86,14 @@ export const SacolaProvider = ({ children }: { children: ReactNode }) => {
       const { itens, bebidas } = JSON.parse(carrinhoSalvo);
       if (itens) setItens(itens);
       if (bebidas) setBebidas(bebidas);
+      if (tigelas) setTigelas(tigelas)
     }
   }, []);
 
   // salva
   useEffect(() => {
-    localStorage.setItem("carrinho", JSON.stringify({ itens, bebidas }));
-  }, [itens, bebidas]);
+    localStorage.setItem("carrinho", JSON.stringify({ itens, bebidas, tigelas }));
+  }, [itens, bebidas, tigelas]);
 
   const mergeComplementos = (
     existentes: Complemento[],
@@ -125,9 +150,9 @@ export const SacolaProvider = ({ children }: { children: ReactNode }) => {
       prev.map((i) =>
         i.id === id && i.tamanho === tamanho
           ? {
-              ...i,
-              complemento: mergeComplementos(i.complemento, [complemento]),
-            }
+            ...i,
+            complemento: mergeComplementos(i.complemento, [complemento]),
+          }
           : i
       )
     );
@@ -185,32 +210,55 @@ export const SacolaProvider = ({ children }: { children: ReactNode }) => {
     );
   };
 
-  const calcularTotal = () => {
-    const totalItens = itens.reduce((acc, item) => {
-      const precoComplementos = item.complemento.reduce(
-        (sum, c) => sum + c.preco * c.quantidade,
-        0
-      );
-      return acc + (item.preco + precoComplementos) * item.quantidade;
-    }, 0);
+  const adicionarTigelas = (tigela: tigelaNaSacola, limites: LimiteTigela[]) => {
+    const limite = limites.find(l => l.tamanho === tigela.tamanho)?.quantidade_de_complemento || 0;
+    if (tigela.complemento.length > limite) return false;
+    setTigelas(prev => [
+      ...prev, {
+        id: tigela.id,
+        tamanho: tigela.tamanho,
+        preco: tigela.preco,
+        complemento: tigela.complemento,
+        quantidade: tigela.quantidade,
+      }
+    ])
 
-    const totalBebidas = bebidas.reduce(
-      (acc, b) => acc + b.preco * b.quantidade,
+  }
+
+const calcularTotal = () => {
+  const totalItens = itens.reduce((acc, item) => {
+    const precoComplementos = item.complemento.reduce(
+      (sum, c) => sum + c.preco * c.quantidade,
       0
     );
+    return acc + (item.preco + precoComplementos) * item.quantidade;
+  }, 0);
 
-    return totalItens + totalBebidas;
-  };
+  const totalBebidas = bebidas.reduce(
+    (acc, b) => acc + b.preco * b.quantidade,
+    0
+  );
+
+  const totalTigelas = tigelas.reduce(
+    (acc, tigela) => acc + tigela.preco * tigela.quantidade,
+    0
+  );
+
+  return totalItens + totalBebidas + totalTigelas;
+};
+
 
   return (
     <SacolaContext.Provider
       value={{
         itens,
         bebidas,
+        tigelas,
         adicionarItem,
         removerItem,
         adicionarComplemento,
         adicionarBebida,
+        adicionarTigelas,
         removerBebida,
         calcularTotal,
       }}

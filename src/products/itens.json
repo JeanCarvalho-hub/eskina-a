@@ -2,27 +2,18 @@
     "Destaques": [
         {
             "id": 1,
-            "nome": "Copo",
-            "preco": 15.00,
-            "tamanho": [
-                "Pequeno",
-                "Médio",
-                "Grande",
-                "XG"
-            ],
-            "img": "/produtos/teste.jpeg"
+            "nome": "SK Casadinho",
+            "img": "/fotos/casadinho.png"
         },
         {
             "id": 2,
-            "nome": "Tigela",
-            "preco": 20.00,
-            "img": "/produtos/teste.jpeg"
+            "nome": "SK Crocante",
+            "img": "/fotos/crocante.png"
         },
         {
             "id": 3,
-            "nome": "Tigela",
-            "preco": 20.00,
-            "img": "/produtos/teste.jpeg"
+            "nome": "SK Místico",
+            "img": "/fotos/Mistico.png"
         }
     ],
     "Combos": [

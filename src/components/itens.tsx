@@ -1,7 +1,7 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import data from "@/products/copos.json";
+import data from "@/products/copos.json" assert {type: "json"};
 import "@/styles/produtos/itens.css";
 import "@/styles/produtos/allitens.css";
 import Link from "next/link";

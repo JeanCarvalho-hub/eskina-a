@@ -155,10 +155,6 @@ export default function Produto() {
               ))}
             </div>
           </div>
-          <div className="textarea-div">
-            <h3>Alguma observação ?</h3>
-              <textarea placeholder="Observações (opcional)" rows={5} className="textarea-box"/>
-          </div>
         </div>
       </section>
       <div className="block-carrinho-finalizar">

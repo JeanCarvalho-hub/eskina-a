@@ -1,0 +1,14 @@
+[
+    {
+        "id": "1t",
+        "tamanho": "500ml",
+        "preco": 24.99,
+        "quantidade_de_complemento": 4
+    },
+    {
+        "id": "2t",
+        "tamanho": "1L",
+        "preco": 39.99,
+        "quantidade_de_complemento": 5
+    }
+]

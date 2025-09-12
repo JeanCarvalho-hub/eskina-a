@@ -9,16 +9,20 @@
 }
 .produto-page{
     height: 100%;
+    padding-bottom: 1em;
 }
 .div-imagem-produto{
     width: 100%;
-    height: 300px;
+    height: 400px;
     aspect-ratio: 16/9;
 }
 .div-description-produto{
     padding: 1.5em;
     font-family: "open";
     font-size: 0.9em;
+}
+.div-description-produto h2{
+    margin-bottom: 0.3em;
 }
 .foto-produto-selecionar{
     width: 100%;
@@ -59,11 +63,11 @@
     margin-top: 0.5em;
 }
 .list-tamanhos li {
-    width: 4.5em;
+    width: 5em;
     height: 3em;
     font-size: 0.8em;
     background-color: rgb(255, 255, 255);
-    padding: 0.5em;
+    padding: 1.5em 1em;
     color: rgb(36, 36, 36);
     border-radius: 5px;
     border: 1px solid rgb(129, 3, 179);
@@ -82,7 +86,7 @@
     gap: 0.4em;
 }
 .div-tamanho{
-    margin: 1em 0 2.5em;
+    margin: 1.3em 0 2.5em;
 }
 .div-complemento{
     margin-top: 1em;
@@ -109,16 +113,6 @@
 .title-complemento{
     margin: 1em 0 0.1em;
     text-align: center;
-}
-.textarea-div{
-    width: 90%;
-    padding-bottom: 5em;
-    margin: auto;
-    font-family: "open";
-}
-.textarea-div > h3{
-    font-size: 1em;
-    margin-bottom: 0.6em;
 }
 .textarea-box{
     width: 100%;
